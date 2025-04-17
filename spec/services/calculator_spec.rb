@@ -17,6 +17,10 @@ RSpec.describe Calculator, type: :service do
         it "returns the sum of the numbers separated by commas" do
           expect(Calculator.add("1,2,3")).to eq(6)
         end
+
+        it "returns the sum of the numbers separated by newlines" do
+            expect(Calculator.add("1\n2\n3")).to eq(6)
+        end
     end
   end
 end
