@@ -7,6 +7,11 @@ RSpec.describe Calculator, type: :service do
       it "returns 0 for an empty string" do
         expect(Calculator.add("")).to eq(0)
       end
+
+      it "returns 0 for a nil input" do
+        expect(Calculator.add(nil)).to eq(0)
+      end
     end
+
   end
 end
