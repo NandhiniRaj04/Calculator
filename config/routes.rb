@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  post '/calculate',to: 'calculations#calculate'
+  post "/calculate", to: "calculations#calculate"
 end
