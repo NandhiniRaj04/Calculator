@@ -13,5 +13,10 @@ RSpec.describe Calculator, type: :service do
       end
     end
 
+    context "when the input contains numbers" do
+        it "returns the sum of the numbers separated by commas" do
+          expect(Calculator.add("1,2,3")).to eq(6)
+        end
+    end
   end
 end
